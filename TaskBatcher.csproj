@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- NuGet package info -->
+		<PackageId>TaskBatcher</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>George Chokhonelidze</Authors>
+		<Company>Biznetx</Company>
+		<Description>Requests batching library</Description>
+		<PackageTags>channels batching async</PackageTags>
+		<RepositoryUrl>https://github.com/gchokhonelidze/TaskBatcher</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<!-- Generate .nupkg on build -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+</Project>
