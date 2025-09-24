@@ -1,11 +1,7 @@
-
 # TaskBatcher
 
 This package collects incoming requests and processes them in batches.
 It is particularly useful in scenarios where multiple requests can be consolidated into a single database call, significantly reducing overhead and improving application scalability.
-
-
-
 
 ## Usage/Examples
 
@@ -30,7 +26,6 @@ async Task Main()
 	await Task.WhenAll(tasks);
 	//Print result:
 	Console.WriteLine("RESULTS:");
-    Console.WriteLine(string.Join(',', tasks.Select(el => el.Result.V).ToArray()));
+	Console.WriteLine(string.Join(',', tasks.Select(el => el.Result.V).ToArray()));
 }
 ```
-
